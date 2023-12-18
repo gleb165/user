@@ -54,7 +54,6 @@ async def update(id: int, performances: UserUpdate, db: AsyncSession = Depends(g
 
 
 
-
 @app.delete('/{id}')
 async def delete(id: int, db: AsyncSession = Depends(get_db)):
     perfo = await db_manegar.get_user(id, db)

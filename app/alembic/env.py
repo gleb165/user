@@ -7,6 +7,7 @@ from sqlalchemy import pool
 from alembic import context
 from sqlalchemy.ext.asyncio import AsyncEngine
 
+
 from app.api.db_model import metadata
 
 
@@ -63,7 +64,7 @@ async def run_migrations_online() -> None:
 
     """
     config_section = config.get_section(config.config_ini_section)
-    config_section["sqlalchemy.url"] = 'postgresql+asyncpg://postgres:пдуи@localhost:5433/postgres'
+    config_section["sqlalchemy.url"] = 'postgresql+asyncpg://postgres:пдуи@localhost:5433/User'
     connectable = AsyncEngine(engine_from_config(
         config_section,
         prefix="sqlalchemy.",
