@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "user"
+version = "0.1.0"
+description = ""
+authors = ["gleb165 <83755952+gleb165@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.105.0"
+pydantic = "^2.5.2"
+pip = "^23.3.2"
+alembic = "^1.13.0"
+databases = "0.8.0"
+sqlalchemy = "1.4.42"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
